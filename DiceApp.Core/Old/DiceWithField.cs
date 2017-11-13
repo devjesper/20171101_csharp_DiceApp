@@ -4,35 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DiceApp.Core
+namespace DiceApp.Core.Old
 {
-
-    public class Dice
+    class DiceWithField
     {
+
         private static Random rnd = new Random();
 
-        private int diceValue;
-
-        public int Value
-        {
-            get { return diceValue; }
-            set {
-                // log
-                // fejlhåndtering
-                // sikkerhed
-                // logik
-                if (value < 1 || value > 6)
-                    value = 1;
-                    // smid fejl (senere)
-
-                this.diceValue = value;
-
-            }
-        }
-
+        public int Value;
         private bool Cheat;
 
-        public Dice()
+        public DiceWithField()
         {
 
             this.Cheat = false;
@@ -41,15 +23,15 @@ namespace DiceApp.Core
         }
 
 
-        public Dice(int value)
+        public DiceWithField(int value)
         {
             if (value < 1 || value > 6)
                 value = 1;
             this.Value = value;
         }
 
-        public Dice(int value, bool cheat) : this(value)
-        {
+        public DiceWithField(int value, bool cheat) : this(value)
+            {
             this.Cheat = cheat;
         }
 
@@ -67,11 +49,6 @@ namespace DiceApp.Core
         }
 
 
+
     }
-
-
-
-    
-
-
 }

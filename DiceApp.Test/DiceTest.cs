@@ -8,15 +8,18 @@ namespace DiceApp.Test
     public class TestDice
     {
         [TestMethod]
-        public void TestDiceCreation()
+        public void TestOfDiceSimpleCreation()
         {
-            Dice d = new Dice();
-            Assert.IsTrue(d.Value > 0 && d.Value < 7, "Wrong value.... " + d.Value);
+            for (int i = 0; i < 1000; i++)
+            {
+                Dice d = new Dice();
+                Assert.IsTrue(d.Value > 0 && d.Value < 7, "Wrong value.... " + d.Value);
 
+            }
 
         }
         [TestMethod]
-        public void TestDiceCreation2()
+        public void TestOfDiceSpecificCreation()
         {
 
             Dice d2 = new Dice(5);
@@ -24,7 +27,7 @@ namespace DiceApp.Test
 
         }
         [TestMethod]
-        public void TestDiceCreation3()
+        public void TestOfDiceCreationWithCheat()
         {
 
             Dice d3 = new Dice(1, true);
@@ -34,12 +37,15 @@ namespace DiceApp.Test
         }
 
         [TestMethod]
-        public void TestDicePrint()
+        public void TestOfDicePrint()
         {
 
-            Dice d3 = new Dice(1);            
-            Assert.IsTrue(d3.Print() == "[1]");
+            for (int i = 1; i < 7; i++)
+            {
+                Dice d3 = new Dice(i);
+                Assert.IsTrue(d3.Print() == "[" + i + "]");
 
+            }
 
         }
     }
