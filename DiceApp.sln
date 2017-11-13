@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.27004.2002
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiceApp.Core", "DiceApp.Core\DiceApp.Core.csproj", "{6B643DFB-7D38-47A6-8DE5-8FB28EA64BCA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiceApp.UI.Console", "DiceApp.UI.Console\DiceApp.UI.Console.csproj", "{A2E90657-A356-4032-AE2E-034F35973C6A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiceApp.Test", "DiceApp.Test\DiceApp.Test.csproj", "{DDFBE4B9-63AF-4355-B381-3F23C94BD30F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{6B643DFB-7D38-47A6-8DE5-8FB28EA64BCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6B643DFB-7D38-47A6-8DE5-8FB28EA64BCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6B643DFB-7D38-47A6-8DE5-8FB28EA64BCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2E90657-A356-4032-AE2E-034F35973C6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2E90657-A356-4032-AE2E-034F35973C6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2E90657-A356-4032-AE2E-034F35973C6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2E90657-A356-4032-AE2E-034F35973C6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDFBE4B9-63AF-4355-B381-3F23C94BD30F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDFBE4B9-63AF-4355-B381-3F23C94BD30F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDFBE4B9-63AF-4355-B381-3F23C94BD30F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDFBE4B9-63AF-4355-B381-3F23C94BD30F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
