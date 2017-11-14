@@ -13,7 +13,7 @@ namespace DiceApp.Test
             for (int i = 0; i < 1000; i++)
             {
                 Dice d = new Dice();
-                Assert.IsTrue(d.Value > 0 && d.Value < 7, "Wrong value.... " + d.Value);
+                Assert.IsTrue(d.DiceValue > 0 && d.DiceValue < 7, "Wrong value.... " + d.DiceValue);
 
             }
 
@@ -23,7 +23,7 @@ namespace DiceApp.Test
         {
 
             Dice d2 = new Dice(5);
-            Assert.IsTrue(d2.Value == 5);
+            Assert.IsTrue(d2.DiceValue == 5);
 
         }
         [TestMethod]
@@ -32,7 +32,7 @@ namespace DiceApp.Test
 
             Dice d3 = new Dice(1, true);
             d3.Roll();
-            Assert.IsTrue(d3.Value == 6);
+            Assert.IsTrue(d3.DiceValue == 6);
 
         }
 
@@ -46,6 +46,23 @@ namespace DiceApp.Test
                 Assert.IsTrue(d3.Print() == "[" + i + "]");
 
             }
+
+        }
+
+        [TestMethod]
+        public void TestOfDiceCupCreation()
+        {
+
+            DiceCup c = new DiceCup();
+            Assert.IsTrue(c.Count() == 5);
+
+            c = new DiceCup(1);
+            Assert.IsTrue(c.Count() == 1);
+
+            c = new DiceCup(10);
+            Assert.IsTrue(c.Count() == 10);
+
+
 
         }
     }

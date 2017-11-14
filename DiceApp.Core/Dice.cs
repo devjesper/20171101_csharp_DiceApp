@@ -13,7 +13,7 @@ namespace DiceApp.Core
 
         private int diceValue;
 
-        public int Value
+        public int DiceValue
         {
             get { return diceValue; }
             set {
@@ -45,7 +45,7 @@ namespace DiceApp.Core
         {
             if (value < 1 || value > 6)
                 value = 1;
-            this.Value = value;
+            this.DiceValue = value;
         }
 
         public Dice(int value, bool cheat) : this(value)
@@ -56,14 +56,14 @@ namespace DiceApp.Core
         public void Roll()
         {
             if (this.Cheat == true)
-                this.Value = 6;
+                this.DiceValue = 6;
             else
-                this.Value = rnd.Next(1, 7);
+                this.DiceValue = rnd.Next(1, 7);
         }
 
         public string Print()
         {
-            return "[" + this.Value + "]";
+            return "[" + this.DiceValue + "]";
         }
 
 
