@@ -8,37 +8,60 @@ namespace DiceApp.Test
     public class TestDice
     {
         [TestMethod]
-        public void TestDiceCreation()
+        public void TestOfDiceSimpleCreation()
         {
-            Dice d = new Dice();
-            Assert.IsTrue(d.Value > 0 && d.Value < 7, "Wrong value.... " + d.Value);
+            for (int i = 0; i < 1000; i++)
+            {
+                Dice d = new Dice();
+                Assert.IsTrue(d.DiceValue > 0 && d.DiceValue < 7, "Wrong value.... " + d.DiceValue);
 
+            }
 
         }
         [TestMethod]
-        public void TestDiceCreation2()
+        public void TestOfDiceSpecificCreation()
         {
 
             Dice d2 = new Dice(5);
-            Assert.IsTrue(d2.Value == 5);
+            Assert.IsTrue(d2.DiceValue == 5);
 
         }
         [TestMethod]
-        public void TestDiceCreation3()
+        public void TestOfDiceCreationWithCheat()
         {
 
             Dice d3 = new Dice(1, true);
             d3.Roll();
-            Assert.IsTrue(d3.Value == 6);
+            Assert.IsTrue(d3.DiceValue == 6);
 
         }
 
         [TestMethod]
-        public void TestDicePrint()
+        public void TestOfDicePrint()
         {
 
-            Dice d3 = new Dice(1);            
-            Assert.IsTrue(d3.Print() == "[1]");
+            for (int i = 1; i < 7; i++)
+            {
+                Dice d3 = new Dice(i);
+                Assert.IsTrue(d3.Print() == "[" + i + "]");
+
+            }
+
+        }
+
+        [TestMethod]
+        public void TestOfDiceCupCreation()
+        {
+
+            DiceCup c = new DiceCup();
+            Assert.IsTrue(c.Count() == 5);
+
+            c = new DiceCup(1);
+            Assert.IsTrue(c.Count() == 1);
+
+            c = new DiceCup(10);
+            Assert.IsTrue(c.Count() == 10);
+
 
 
         }
