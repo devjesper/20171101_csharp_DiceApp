@@ -35,14 +35,41 @@ namespace DiceApp.UI.Console
             //    dices[i].Roll();
 
 
-            DiceCup c = new DiceCup();
-            System.Console.WriteLine(c.Print());
-            c.Roll();
-            System.Console.WriteLine(c.Print());
+            //DiceCup c = new DiceCup();
+            //System.Console.WriteLine(c.Print());
+            //c.Roll();
+            //System.Console.WriteLine(c.Print());
 
-            //int l = c.Length;
-            //l = c.Count();
+            ////int l = c.Length;
+            ////l = c.Count();
 
+
+            //for (int i = 0; i < 10; i++)
+            //{
+            //    LudoDice l = new LudoDice();
+            //    System.Console.WriteLine(l.Print()); 
+            //}
+
+
+
+
+            try
+            {
+                Dice d = new Dice(1);
+                //d = new Dice(7);
+                DiceCup c = new DiceCup(10);
+            }
+            catch (DiceException ex)
+            {
+                System.Console.WriteLine("Dice " + ex.Message);
+
+            }
+
+            catch (Exception ex)
+            {
+                System.Console.WriteLine("System " + ex.Message);
+
+            }
 
 
         }

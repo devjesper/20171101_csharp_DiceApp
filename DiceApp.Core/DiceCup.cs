@@ -8,13 +8,16 @@ namespace DiceApp.Core
 {
     public class DiceCup
     {
-        private Dice[] dices;
+        protected Dice[] dices;
 
         public DiceCup() : this(5)
         {}
 
         public DiceCup(int count)
         {
+            if (count > 6) {
+                throw new DiceException("Too many dices");
+            }
             this.dices = new Dice[count];
             for (int i = 0; i < count; i++)
             {

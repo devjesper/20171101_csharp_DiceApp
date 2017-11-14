@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiceApp.UI.Console", "DiceA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiceApp.Test", "DiceApp.Test\DiceApp.Test.csproj", "{DDFBE4B9-63AF-4355-B381-3F23C94BD30F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiceApp.UI.WinForm", "DiceApp.UI.WinForm\DiceApp.UI.WinForm.csproj", "{EF97DA11-A880-4F29-8D35-09D180D80888}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{DDFBE4B9-63AF-4355-B381-3F23C94BD30F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DDFBE4B9-63AF-4355-B381-3F23C94BD30F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DDFBE4B9-63AF-4355-B381-3F23C94BD30F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF97DA11-A880-4F29-8D35-09D180D80888}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF97DA11-A880-4F29-8D35-09D180D80888}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF97DA11-A880-4F29-8D35-09D180D80888}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF97DA11-A880-4F29-8D35-09D180D80888}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
