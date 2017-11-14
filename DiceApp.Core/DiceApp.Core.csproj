@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="Dice.cs" />
     <Compile Include="DiceCup.cs" />
+    <Compile Include="LudoDice.cs" />
     <Compile Include="Old\DiceWithField.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

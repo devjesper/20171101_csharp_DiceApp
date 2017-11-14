@@ -44,6 +44,11 @@ namespace DiceApp.UI.Console
             //l = c.Count();
 
 
+            LudoDice l = new LudoDice();
+            l.Roll();
+            l.IsGlobe();
+
+
 
         }
     }

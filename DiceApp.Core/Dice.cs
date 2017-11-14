@@ -16,7 +16,7 @@ namespace DiceApp.Core
         public int DiceValue
         {
             get { return diceValue; }
-            set {
+            private set {
                 // log
                 // fejlhåndtering
                 // sikkerhed
@@ -30,12 +30,12 @@ namespace DiceApp.Core
             }
         }
 
-        private bool Cheat;
+        private bool cheat;
 
         public Dice()
         {
 
-            this.Cheat = false;
+            this.cheat = false;
             this.Roll();
 
         }
@@ -50,12 +50,12 @@ namespace DiceApp.Core
 
         public Dice(int value, bool cheat) : this(value)
         {
-            this.Cheat = cheat;
+            this.cheat = cheat;
         }
 
         public void Roll()
         {
-            if (this.Cheat == true)
+            if (this.cheat == true)
                 this.DiceValue = 6;
             else
                 this.DiceValue = rnd.Next(1, 7);
