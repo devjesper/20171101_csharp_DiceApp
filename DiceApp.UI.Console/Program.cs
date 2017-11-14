@@ -44,9 +44,12 @@ namespace DiceApp.UI.Console
             //l = c.Count();
 
 
-            LudoDice l = new LudoDice();
-            l.Roll();
-            l.IsGlobe();
+            for (int i = 0; i < 10; i++)
+            {
+                LudoDice l = new LudoDice();
+                System.Console.WriteLine(l.Print()); 
+            }
+            
 
 
 

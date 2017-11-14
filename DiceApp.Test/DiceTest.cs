@@ -141,7 +141,7 @@ namespace DiceApp.Test
                     Assert.IsTrue(d.IsGlobe());
                 else
                     Assert.IsFalse(d.IsGlobe());
-
+                
             }
 
 

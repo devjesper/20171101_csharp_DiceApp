@@ -8,7 +8,7 @@ namespace DiceApp.Core
 {
     public class DiceCup
     {
-        private Dice[] dices;
+        protected Dice[] dices;
 
         public DiceCup() : this(5)
         {}

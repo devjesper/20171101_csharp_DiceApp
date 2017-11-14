@@ -61,7 +61,7 @@ namespace DiceApp.Core
                 this.DiceValue = rnd.Next(1, 7);
         }
 
-        public string Print()
+        public virtual string Print()
         {
             return "[" + this.DiceValue + "]";
         }

@@ -40,7 +40,15 @@ namespace DiceApp.Core
         {
 
         }
-  
+
+        public override string Print()
+        {
+            if (this.IsStar()) 
+                return "[S]";
+            if (this.IsGlobe())
+                return "[G]";
+            return base.Print();
+        }
 
     }
 }
