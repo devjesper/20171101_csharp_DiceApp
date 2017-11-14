@@ -22,8 +22,8 @@ namespace DiceApp.Core
                 // sikkerhed
                 // logik
                 if (value < 1 || value > 6)
-                    value = 1;
-                    // smid fejl (senere)
+                    throw new ApplicationException("Wrong dice value");
+                    
 
                 this.diceValue = value;
 
@@ -43,8 +43,6 @@ namespace DiceApp.Core
 
         public Dice(int value)
         {
-            if (value < 1 || value > 6)
-                value = 1;
             this.DiceValue = value;
         }
 
